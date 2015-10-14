@@ -27,6 +27,10 @@ on early-init
     mkdir /lta-label 0771 system system
 
 on init
+
+    # Preload the BoringSSL wrapper
+    export LD_PRELOAD "libboringssl-compat.so"
+
     mkdir /persist 0771 system system
 
     # for backwards compatibility

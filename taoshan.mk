@@ -252,6 +252,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstlport
 
+# BoringSSL compatability wrapper
+PRODUCT_PACKAGES += \
+		    libboringssl-compat
+
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf \
@@ -315,4 +320,3 @@ PRODUCT_PACKAGES += libtime_genoff
 # Product attributes
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_CHARACTERISTICS := phone
-
