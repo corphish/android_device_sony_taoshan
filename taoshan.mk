@@ -254,7 +254,7 @@ PRODUCT_PACKAGES += \
 
 # BoringSSL compatability wrapper
 PRODUCT_PACKAGES += \
-		    libboringssl-compat
+		libboringssl-compat
 
 
 PRODUCT_COPY_FILES += \
